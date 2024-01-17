@@ -17,7 +17,16 @@ const AppList = () => {
   const [type, setType] = useState("restaurent");
   const [rating, setRating] = useState("");
 
-  const places = [{ name: "1" }, { name: "2" }, { name: "3" }, { name: "4" }];
+  const places = [
+    { name: "1" },
+    { name: "2" },
+    { name: "3" },
+    { name: "4" },
+    { name: "1" },
+    { name: "2" },
+    { name: "3" },
+    { name: "4" },
+  ];
 
   // ----------------------------------------------------------------
   return (
@@ -45,7 +54,7 @@ const AppList = () => {
       <Grid container spacing={3} className={classes.list}>
         {places?.map((place, i) => (
           <Grid item key={i} xs={12}>
-            <PlaceDetails placeDetails={place}/>
+            <PlaceDetails placeDetails={place} />
           </Grid>
         ))}
       </Grid>
