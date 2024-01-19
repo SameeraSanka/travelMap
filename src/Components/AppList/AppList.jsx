@@ -12,21 +12,12 @@ import {
 
 import useStyles from "./style";
 import PlaceDetails from "../PlaceDetails/PlaceDetails";
-const AppList = () => {
+
+const AppList = ({places}) => {
   const classes = useStyles();
   const [type, setType] = useState("restaurent");
   const [rating, setRating] = useState("");
 
-  const places = [
-    { name: "1" },
-    { name: "2" },
-    { name: "3" },
-    { name: "4" },
-    { name: "1" },
-    { name: "2" },
-    { name: "3" },
-    { name: "4" },
-  ];
 
   // ----------------------------------------------------------------
   return (
